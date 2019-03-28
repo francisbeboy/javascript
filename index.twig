@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="FR">
+	<head>
+		<meta charset="utf-8"/>
+		<title>restauration</title>
+		<link rel="stylesheet" href="css/index.css"/> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="container" id="bloc-page">
+			<header>
+				<div id="titre_principal">
+					<div id="logo">
+						<img src="images/cuillere.jpg" alt="logo de zozor"/>
+						<h1>my food</h1>
+					</div>
+
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#"></span>Accueil</a></li>
+						<li><a href="menu">Menu</a></li>
+						<li><a href="inscription">s'inscrire</a></li>
+						<li><a href="connexion">se connecter</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<div id="banniere_image">
+				<h2>Bienvenue sur notre site de comande en ligne</h2>
+			</div>
+			<section class="container">
+          <div class="jumbotron">
+            <div class="row">
+            <h2 style="color:#123">Quand on n’a vraiment pas le temps de cuisiner, myfood propose de nous livrer nos repas pour toute la semaine</h2>
+            <p>On change un peu de concept avec une entreprise qui livre des nouriture  et des fiches recettes pour que vous cuisiniez vous-mêmes vos plats (équilibrés).ou bien , vous en avez marre de faire la cuisine alors notre service
+			 est à votre disposition Vous choisissez le nombre de personnes à nourrir et les recettes qui vous plaisent, et on vous livre vos courses pour la semaine avec les indications de préparation. Ok, ça vous fait cuisiner un peu, mais au moins vous êtes débarrassés de la corvée de courses et vous n’avez plus besoin d’être inspirés pour trouver ce que vous allez manger tous les jours. Plutôt une bonne idée.</p>
+            </div>
+          </div>
+          
+        </section>
+		<div class = "row">
+			<section>
+				<article id="image-corps">
+					<h1>les meilleurs restaurants de qualité</h1>
+					<p>
+						Avec <h5>my food</p>, vous pouvez avoir accès aux différante plats de qualité et en plus dans les meilleurs restaurants.
+						vous<br>avez au menu des plats africains telques le foutou igname, foutou banane;plats européens et Americans telques burger Americains...<br>
+						<img src="images/tchep.jpg" alt="photo d'un restaurant">
+
+					</p>
+
+					<h2> faire votre commande  tout en restant chez vous c'est encore plus simple avec notre service. vous ètres d'Abidjan , alors pas besoins de vous fiat deplacer nous avons mis à votre disposition des personnel pous vous délivrez votre repart dans moin de 2h.</h2>
+					<p>
+						<span>my food</span> vous offre un lieu où il fait bon revenir tous les jours pour le café du matin,le petit déjeuner,<br> pour manger à midi ou tout simplement pour prendre un verre en bonne compagnie. my FOOd vous<br> facilite la tâche en mettant à votre disposition des restaurants de qualité et ce dans toutes les communes <br>d'Abidjan.<br>
+						<img src="images/commune.jpg" alt="photo d'une ville">
+					</p>
+				
+				</article>
+				<aside>
+					<h1>votre commune  si vous plait!</h1>
+					<p>trouver les meilleurs restaurantd de votre commune ici</p>
+					<img src="images/bulle.png" alt="" id="fleche_bulle" />
+					<div>
+						<form method="post" action="/">
+							
+							<select name="commune" id="commune" required>
+							<option selected disabled>sélectionnez une commune svp</option>
+							{% for element in info %}
+								<option value="{{element.id_commmunes}}">{{element.nom_communes}}</option>
+							{% endfor %}
+						</select>
+							<input type="submit" value="ENVOYER">
+						</form>
+					</div>
+					
+				</aside>
+				
+			</section>
+			<div id="type_plats">
+					<p>
+						<img name="slide">
+						<legend>Plats Africain</legend>
+					</p>
+					<p>
+						<img name="euro">
+						<legend>Plats Europeen</legend>
+					</p>
+					<p>
+						<img name="asi">
+						<legend>Plats Asiatique</legend>
+					</p>
+			</div>
+			
+			<footer>
+				<div id="pied_de_page">
+					<div class="lien">
+						<h3>lien</h3>
+						<ul>
+							<li><a href="#">Accueil</a></li>
+							<li><a href="menu.twig">Menu</a></li>
+							<li><a href="inscription.twig">s'inscrire</a></li>
+							<li><a href="connexion.twig">se connecter</a></li>
+						</ul>
+					</div>
+						</div>
+					<div class="footer">
+						<h3>restauration</h3>
+						<ul>
+							<li>Africaine</li>
+							<li>Européenne</li>
+							<li>Asiatique</li>
+						</ul>
+					</div>
+
+					<div class="footer">
+						<h3>Communes</h3>
+						<ul>
+							<li>Plateau</li>
+							<li>Cocody</li>
+							<li>Marcory</li>
+							<li>yopougon</li>
+							<li>etc ...</li>
+						</ul>
+					</div>
+				</div></br>
+				
+							
+			</footer>
+				<div style="text-align: center; background-color: #908F8E; padding:25px 0px">
+					<h4>© copyright. tout droit revervé | projet javaScript</h4>
+				</div>
+		</div>
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</body>
+</html>
